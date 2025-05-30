@@ -5,11 +5,11 @@ module top_module (
 
    always @ (*) begin
       case (in[0])
-        1'b1: out = 2'd0;
+        1'b1: pos = 2'd0;
         default:
           begin
              case (in[1])
-               1'b1: out = 2'd1;
+               1'b1: pos = 2'd1;
                default:
                  begin
                     case (in[2])
